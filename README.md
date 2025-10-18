@@ -1,8 +1,12 @@
-## sbt project compiled with Scala 3
+# Various utilities
+Various helper utilities to help me
+
+## depdiff
+Used to calculate diff of maven projects dependency tree. 
 
 ### Usage
+`  depdiff --ours /abs-path/to/project/v1 --theirs /abs-path/to/project/v2 [--settings /abs-path/to/maven-settings.xml]`
 
-This is a normal sbt project. You can compile code with `sbt compile`, run it with `sbt run`, and `sbt console` will start a Scala 3 REPL.
+### Assemble
+`sbt` and then `sbt nativeImage`
 
-For more information on the sbt-dotty plugin, see the
-[scala3-example-project](https://github.com/scala/scala3-example-project/blob/main/README.md).
