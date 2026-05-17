@@ -8,5 +8,9 @@ Used to calculate diff of maven projects dependency tree.
 `  depdiff --ours /abs-path/to/project/v1 --theirs /abs-path/to/project/v2 [--settings /abs-path/to/maven-settings.xml]`
 
 ### Assemble
-`sbt` and then `sbt nativeImage`
+With nix shell.
+`nix-shell` and then `sbt --java-home $JAVA_HOME nativeImage`
 
+Without nix shell.
+- Set $JAVA_HOME variable
+- execute `sbt nativeImage`
