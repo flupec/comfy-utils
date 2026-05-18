@@ -9,5 +9,6 @@ lazy val depdiff = project
     scalaVersion := scala3Version,
     libraryDependencies += "org.scalameta" %% "munit" % "1.0.0" % Test,
     compile / mainClass := Some("main"),
-    nativeImageInstalled := true
+    nativeImageInstalled := true,
+    nativeImageOptions ++= Seq("--no-fallback")
   )
